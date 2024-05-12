@@ -1,105 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://www.blazesql.com/app/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>Blog | Welcom Blog</title>
-  </head>
 
-  <body>
-    <!-- Header -->
-    <div class="header">
-      <h1>My Blog Website</h1>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" type="image/x-icon" href="https://www.blazesql.com/app/favicon-32x32.png" />
+  <link rel="stylesheet" href="style/style.css" />
+  <title>Blog | Welcom Blog</title>
+</head>
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-      <a href="#">HOME</a>
-      <a href="/album.html">ALBUM</a>
-      <a href="/contact.html">CONTACT</a>
-    </div>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>My Blog Website</h1>
+  </div>
 
-    <!-- The flexible grid (content) -->
-    <div class="row">
-      <div class="side">
-        <h2>About Me</h2>
-        <img src="/assets/img/User Avatar.jpg" alt="" class="person" />
-        <h2>Information</h2>
-        <h3>BACKGROUND/CAREER OBJECTIVES</h3>
-        <p>
-          Software engineer with more than 2 years of experience in software
-          development and commercial applications. Look forward to joining [X]
-          company to make creative and innovative business solutions for its
-          impressive global clients. As in previous roles, 25% of downtime was
-          reduced and 98% of projects were completed on time. Simultaneously,
-          the identification and resolution of a critical process bottleneck
-          increased coding efficiency by 35% when being resolved.
-        </p>
-      </div>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#">HOME</a>
+    <a href="/pages/album.html">ALBUM</a>
+    <a href="/pages/contact.html">CONTACT</a>
+  </div>
+
+  <!-- The flexible grid (content) -->
+  <div class="row">
+    <main>
+      <section class="card-left">
+        <img src="https://i.pinimg.com/564x/a2/1f/45/a21f451cb53c9065cf9587fcd5109737.jpg" alt="Avatar" class="card-img-left" />
+        <div class="container">
+          <h4><b>Jane Doe</b></h4>
+          <p>Interior Designer</p>
+          <button class="card-btn-left"><a href="./pages/content.html">About</a></button>
+        </div>
+      </section>
       <div class="main">
-        <h2>WORK EXPERIENCE</h2>
-        <h5>August 2021 - August 2022</h5>
-        <ul>
-          <li>
-            Do supportive activities in company's engineering and testing
-            processes.
-          </li>
-          <li>Test finished software to meet customer’s requirements.</li>
-          <li>Complete maintenance on existing programs.</li>
-          <li>
-            Work closely with product team on scope of future projects and
-            innovations.
-          </li>
-          <li>Continuously define, measure and improve processes.</li>
-          <li>
-            Identified and addressed critical process bottlenecks that increased
-            coding efficiency by 35%.
-          </li>
-        </ul>
-        <br />
-        <h2>SKILL</h2>
-        <ul>
-          <li>PROGRAM UI/UX BASED ON ES6, REACTJS, REDUX.</li>
-          <li>WORK WITH FRONTEND JS, REACTJS FRAMEWORKS</li>
-          <li>OPTIMIZE SOURCE CODE, PERFORMANCE.</li>
-          <li>
-            WORK WITH REACT/REACT NATIVE SOURCE CODE AND CONVENTIONS,
-            TYPESCRIPT, REACT COMPONENT, REDUX, FLEXBOX, PUSH NOTIFICATION, CSS
-            FRAMEWORK (BOOTSTRAP, ZURB, ..), CSS PREPROCESSOR (LESS, SASS,..)
-          </li>
-          <li>
-            UNDERSTAND THE PRINCIPLES OF CODE MAKING AND CODING: CLEAN CODE,
-            SOLID
-          </li>
-          <li>DESIGN RESPONSIVE WEB DESIGN AND WORK WITH RESTFUL APIS.</li>
-        </ul>
+        <section class="card-right">
+          <img src="https://i.pinimg.com/564x/c5/6f/58/c56f5806f9abedb2f2793477c0cfa529.jpg" alt="Avatar" class="card-img-right" />
+          <div class="container">
+            <h4><b>Front end</b></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="card-btn-right">Read more</button>
+          </div>
+        </section>
+        <section class="card-right">
+          <img src="https://i.pinimg.com/236x/65/6a/6e/656a6edabb862a6448e365cf2de4bce0.jpg" alt="Avatar" class="card-img-right" />
+          <div class="container">
+            <h4><b>Back end</b></h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <button class="card-btn-right">Read more</button>
+          </div>
+        </section>
       </div>
-    </div>
 
-    <!-- Footer -->
-    <footer id="main-footer">
-      <div class="footersome">
-        <a href="https://www.youtube.com/" title="Blog YouTube"
-          ><i class="fa fa-youtube"></i
-        ></a>
-        <a href="https://www.facebook.com/" title="Blog Facebook"
-          ><i class="fa fa-facebook"></i
-        ></a>
-        <a href="https://www.twitter.com/" title="Blog Twitter"
-          ><i class="fa fa-twitter"></i
-        ></a>
-      </div>
-      <p class="copyright">BLOG © 2024, All RIghts Reserved</p>
-    </footer>
-  </body>
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="footersome">
+      <a href="https://www.youtube.com/" title="Blog YouTube"><i class="fa fa-youtube"></i></a>
+      <a href="https://www.facebook.com/" title="Blog Facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.twitter.com/" title="Blog Twitter"><i class="fa fa-twitter"></i></a>
+    </div>
+    <p class="copyright">BLOG © 2024, All RIghts Reserved</p>
+  </footer>
+</body>
+
 </html>
