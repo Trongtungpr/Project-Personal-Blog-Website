@@ -1,85 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="../style/album.css" />
-    <title>ALBUM | Welcom Blog</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <div class="header">
-      <h1>Image Gallery</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../style/album.css" />
+  <!-- <link rel="stylesheet" href="./style/responsive.css"> -->
+  <title>ALBUM | Welcom Blog</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>Image Gallery</h1>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav id="nav__bar">
+    <ul id="nav__list">
+      <li id="nav__item01">
+        <a href="../index.html" id="nav__item01__link">HOME</a>
+      </li>
+      <li id="nav__item02">
+        <a href="#" id="nav__item02__link">ALBUM</a>
+      </li>
+      <li id="nav__item03">
+        <a href="../pages/contact.html" id="nav__item03__link">CONTACT</a>
+      </li>
+      <li id="nav__item04">
+        <a href="../pages/content.html" id="nav__item04__link">BLOG</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- The flexible grid (content) -->
+  <div class="row">
+    <main>
+      <section class="card-left">
+      
+          <div class="card-left-item">
+            <img src="https://i.pinimg.com/564x/a2/1f/45/a21f451cb53c9065cf9587fcd5109737.jpg" alt="Avatar"
+              class="card-img-left" />
+            <div class="container">
+              <h4><b>Jane Doe</b></h4>
+              <p>Interior Designer</p>
+              <button class="card-btn-left"><a href="./pages/content.html">About</a></button>
+            </div>
+          </div>
+      
+      </section>
+      <div class="main">
+        <div class="column">
+          <img src="https://i.pinimg.com/736x/b2/04/00/b20400053d48b6077a330d3fac8e7e94.jpg" />
+          <img src="https://i.pinimg.com/564x/6a/50/5f/6a505f6b1837787e9e7f28c8f5a20988.jpg" />
+          <img src="https://i.pinimg.com/736x/f1/06/6a/f1066a6bcfa883302ffd7ff41f65897e.jpg" />
+          <img src="https://i.pinimg.com/736x/cc/6e/92/cc6e924a71606f94867888098ac07d4f.jpg" />
+          <img src="https://i.pinimg.com/564x/42/d3/e7/42d3e7fa8c742567e9469aa0f4b07883.jpg" />
+          <img src="https://i.pinimg.com/564x/39/21/fa/3921fa1681cc6cc43ae0c8a61281056a.jpg" />
+          <img src="https://i.pinimg.com/564x/0f/b5/a9/0fb5a9d44c89a7eca479bf0157d3c643.jpg" />
+        </div>
+
+        <div class="column">
+          <img src="https://i.pinimg.com/564x/6b/c2/e7/6bc2e7797a8e1b2c266fab71cf600a79.jpg" />
+          <img src="https://i.pinimg.com/564x/ec/de/cd/ecdecdf4d9b3d145c1a1c5d3ddacefc2.jpg" />
+          <img src="https://i.pinimg.com/564x/fa/9c/32/fa9c3270e40cecd57b1b7bb494d919c9.jpg" />
+          <img src="https://i.pinimg.com/564x/29/35/d2/2935d2124f9619a49644e34b5917a3ac.jpg" />
+          <img src="https://i.pinimg.com/564x/1f/55/d3/1f55d3ca54cde19962dcf40d5f832137.jpg" />
+          <img src="https://i.pinimg.com/564x/a2/cf/18/a2cf18b8198e025fd651185ad7b3488d.jpg" />
+          <img src="https://i.pinimg.com/564x/fc/15/4c/fc154c67006dd50c27e9b1cad98e9196.jpg" />
+        </div>
+
+        <div class="column">
+          <img src="https://i.pinimg.com/564x/24/b1/4b/24b14bf1146c75c74b71f1b6237f5ad1.jpg" />
+          <img src="https://i.pinimg.com/564x/b2/79/7b/b2797b57eefe187ac3c862ceabc18e30.jpg" />
+          <img src="https://i.pinimg.com/564x/81/e2/84/81e284408df478a414ad72b99bb83e25.jpg" />
+          <img src="https://i.pinimg.com/564x/7d/f7/58/7df7585747f520d642c84e0731ddd25f.jpg" />
+          <img src="https://i.pinimg.com/564x/ea/7d/6c/ea7d6cf3a99b35fea4da0d8ae5709c7c.jpg" />
+          <img src="https://i.pinimg.com/564x/44/2a/98/442a982ec6da3935df78026f5e8670b7.jpg" />
+          <img src="https://i.pinimg.com/564x/b4/ac/43/b4ac435c1a4c01345d8096abc16e808d.jpg" />
+        </div>
+
+        <div class="column">
+          <img src="https://i.pinimg.com/736x/c0/c2/35/c0c2351a435014ef5535bd8aa415e4a8.jpg" />
+          <img src="https://i.pinimg.com/564x/ac/37/04/ac3704353730d2b5d11abb01db9729cc.jpg" />
+          <img src="https://i.pinimg.com/564x/35/52/aa/3552aadd3c3cf2e8cf8b2549905b65fc.jpg" />
+          <img src="https://i.pinimg.com/564x/07/da/04/07da0413c2128af0ac9347db42f30953.jpg" />
+          <img src="https://i.pinimg.com/564x/04/fd/9c/04fd9cbb8a70e6daec370dff297040e6.jpg" />
+          <img src="https://i.pinimg.com/564x/d7/85/f0/d785f0bed0c956693ef74f103454b0a3.jpg" />
+          <img src="https://i.pinimg.com/564x/fd/94/06/fd94063e11404e936529a11faff7a959.jpg" />
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footersome">
+      <a href="https://www.youtube.com/" title="Blog YouTube"><i class="fa fa-youtube"></i></a>
+      <a href="https://www.facebook.com/" title="Blog Facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.twitter.com/" title="Blog Twitter"><i class="fa fa-twitter"></i></a>
     </div>
+    <p class="copyright">BLOG © 2024, All RIghts Reserved</p>
+  </footer>
+</body>
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-      <a href="../index.html">HOME</a>
-      <a href="#">ALBUM</a>
-      <a href="../pages/contact.html">CONTACT</a>
-    </div>
-
-    <!-- The flexible grid (content) -->
-    <div class="row">
-      <div class="column">
-        <img src="https://i.pinimg.com/736x/b2/04/00/b20400053d48b6077a330d3fac8e7e94.jpg" />
-        <img src="https://i.pinimg.com/564x/6a/50/5f/6a505f6b1837787e9e7f28c8f5a20988.jpg" />
-        <img src="https://i.pinimg.com/736x/f1/06/6a/f1066a6bcfa883302ffd7ff41f65897e.jpg" />
-        <img src="https://i.pinimg.com/736x/cc/6e/92/cc6e924a71606f94867888098ac07d4f.jpg" />
-        <img src="https://i.pinimg.com/564x/42/d3/e7/42d3e7fa8c742567e9469aa0f4b07883.jpg" />
-        <img src="https://i.pinimg.com/564x/39/21/fa/3921fa1681cc6cc43ae0c8a61281056a.jpg" />
-        <img src="https://i.pinimg.com/564x/0f/b5/a9/0fb5a9d44c89a7eca479bf0157d3c643.jpg" />
-      </div>
-
-      <div class="column">
-        <img src="https://i.pinimg.com/564x/6b/c2/e7/6bc2e7797a8e1b2c266fab71cf600a79.jpg" />
-        <img src="https://i.pinimg.com/564x/ec/de/cd/ecdecdf4d9b3d145c1a1c5d3ddacefc2.jpg" />
-        <img src="https://i.pinimg.com/564x/fa/9c/32/fa9c3270e40cecd57b1b7bb494d919c9.jpg" />
-        <img src="https://i.pinimg.com/564x/29/35/d2/2935d2124f9619a49644e34b5917a3ac.jpg" />
-        <img src="https://i.pinimg.com/564x/1f/55/d3/1f55d3ca54cde19962dcf40d5f832137.jpg" />
-        <img src="https://i.pinimg.com/564x/a2/cf/18/a2cf18b8198e025fd651185ad7b3488d.jpg" />
-        <img src="https://i.pinimg.com/564x/fc/15/4c/fc154c67006dd50c27e9b1cad98e9196.jpg" />
-      </div>
-
-      <div class="column">
-        <img src="https://i.pinimg.com/564x/24/b1/4b/24b14bf1146c75c74b71f1b6237f5ad1.jpg" />
-        <img src="https://i.pinimg.com/564x/b2/79/7b/b2797b57eefe187ac3c862ceabc18e30.jpg" />
-        <img src="https://i.pinimg.com/564x/81/e2/84/81e284408df478a414ad72b99bb83e25.jpg" />
-        <img src="https://i.pinimg.com/564x/7d/f7/58/7df7585747f520d642c84e0731ddd25f.jpg" />
-        <img src="https://i.pinimg.com/564x/ea/7d/6c/ea7d6cf3a99b35fea4da0d8ae5709c7c.jpg" />
-        <img src="https://i.pinimg.com/564x/44/2a/98/442a982ec6da3935df78026f5e8670b7.jpg" />
-        <img src="https://i.pinimg.com/564x/b4/ac/43/b4ac435c1a4c01345d8096abc16e808d.jpg" />
-      </div>
-
-      <div class="column">
-        <img src="https://i.pinimg.com/736x/c0/c2/35/c0c2351a435014ef5535bd8aa415e4a8.jpg" />
-        <img src="https://i.pinimg.com/564x/ac/37/04/ac3704353730d2b5d11abb01db9729cc.jpg" />
-        <img src="https://i.pinimg.com/564x/35/52/aa/3552aadd3c3cf2e8cf8b2549905b65fc.jpg" />
-        <img src="https://i.pinimg.com/564x/07/da/04/07da0413c2128af0ac9347db42f30953.jpg" />
-        <img src="https://i.pinimg.com/564x/04/fd/9c/04fd9cbb8a70e6daec370dff297040e6.jpg" />
-        <img src="https://i.pinimg.com/564x/d7/85/f0/d785f0bed0c956693ef74f103454b0a3.jpg" />
-        <img src="https://i.pinimg.com/564x/fd/94/06/fd94063e11404e936529a11faff7a959.jpg" />
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer id="main-footer">
-      <div class="footersome">
-        <a href="https://www.youtube.com/" title="Blog YouTube"
-          ><i class="fa fa-youtube"></i
-        ></a>
-        <a href="https://www.facebook.com/" title="Blog Facebook"
-          ><i class="fa fa-facebook"></i
-        ></a>
-        <a href="https://www.twitter.com/" title="Blog Twitter"
-          ><i class="fa fa-twitter"></i
-        ></a>
-      </div>
-      <p class="copyright">BLOG © 2024, All RIghts Reserved</p>
-    </footer>
-  </body>
 </html>

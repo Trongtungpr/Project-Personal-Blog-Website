@@ -16,24 +16,45 @@ body {
   color: white;
 }
 
-/* Style the top navigation bar */
-.navbar {
-  display: flex;
-  background-color: #333;
+/* Định dạng thanh điều hướng */
+#nav__bar {
+  background-color: #333; /* Màu nền */
+  padding: 10px 20px; /* Đệm xung quanh */
 }
 
-/* Style the navigation bar links */
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
+/* Kiểu dáng cho danh sách menu */
+#nav__list {
+  list-style: none; /* Xóa dấu đầu mục mặc định */
+  margin: 0; /* Xóa khoảng trống mặc định */
+  padding: 0; /* Xóa khoảng trống mặc định */
 }
 
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
+/* Kiểu dáng cho các mục menu (item) */
+#nav__item01,
+#nav__item02,
+#nav__item03, 
+#nav__item04 {
+  display: inline-block; /* Hiển thị các mục menu theo hàng */
+  margin-right: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+/* Kiểu dáng cho liên kết (link) bên trong mục menu */
+#nav__item01__link,
+#nav__item02__link,
+#nav__item03__link,
+#nav__item04__link {
+  text-decoration: none; /* Xóa gạch chân mặc định */
+  color: #fff; /* Màu sắc của chữ */
+  padding: 5px 10px; /* Đệm xung quanh cho liên kết */
+}
+
+/* Hiệu ứng hover cho liên kết */
+#nav__item01__link:hover,
+#nav__item02__link:hover,
+#nav__item03__link:hover,
+#nav__item04__link:hover {
+  background-color: #e0e0e0; /* Màu nền khi hover */
+  color: #000; /* Màu chữ khi hover */
 }
 
 /* Column container */
@@ -42,20 +63,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-.side .person {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin: 0 auto;
-  object-fit: cover;
-}
 
 /* Main column */
 .main {
@@ -64,6 +71,7 @@ body {
   background-color: white;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  justify-content: center;
 }
 main {
   display: grid;
@@ -77,6 +85,9 @@ main {
   width: 100%;
   border-radius: 5px;
   text-align: center;
+}
+.card-left-item {
+ 
 }
 .card-btn-left a{
   text-decoration: none;
@@ -151,18 +162,157 @@ img  {
 
 /* Footer */
 
-#main-footer {
+#footer {
   text-align: center;
   background: #444;
   color: #fff;
   padding: 20px;
 }
-#main-footer .footersome {
+#footer .footersome {
   padding: 20px 40px 10px 40px;
   color: #ddd;
   font-size: 20px;
 }
-#main-footer .footersome a {
+#footer .footersome a {
   margin-right: 10px;
   color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+    /* Header Styles */
+    .header {
+      text-align: center; /* Center the header content */
+      padding: 20px; /* Add padding for spacing */
+    }
+  
+    .header h1 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    /* Navigation Bar Styles */
+    #nav__bar {
+      background-color: #333; /* Background color */
+      padding: 10px 20px; /* Padding around the navigation */
+      display: flex; /* Use flexbox for horizontal layout */
+      justify-content: space-between; /* Align items horizontally */
+    }
+  
+    #nav__list {
+      list-style: none; /* Remove default bullet points */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      display: flex; /* Use flexbox for horizontal layout of menu items */
+    }
+  
+    #nav__item01,
+    #nav__item02,
+    #nav__item03,
+    #nav__item04 {
+      display: inline-block;
+      margin-right: 20px; /* Spacing between menu items */
+    }
+  
+    #nav__item01__link,
+    #nav__item02__link,
+    #nav__item03__link,
+    #nav__item04__link {
+      text-decoration: none; /* Remove default underline */
+      color: #fff; /* Text color */
+      padding: 5px 10px; /* Padding for menu items */
+      font-weight: bold; /* Bold font weight for emphasis */
+    }
+  
+    #nav__item01__link:hover,
+    #nav__item02__link:hover,
+    #nav__item03__link:hover,
+    #nav__item04__link:hover {
+      background-color: #e0e0e0; /* Hover background color */
+      color: #000; /* Hover text color */
+    }
+  
+  /* Main Content */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  main {
+    display: grid;
+    /* display: flex;
+    flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px 20px;
+  }
+    
+  .card-left {
+    width: 100%;
+  }
+  
+  .card-right {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .card-img {
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    /* padding: 20px; */
+  }
+  
+  .card-btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer */
+  #footer {
+    background: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding for spacing */
+    text-align: center; /* Center footer content */
+  }
+
+  #footer .footersome {
+    margin-bottom: 10px; /* Add spacing below social icons */
+  }
+
+  #footer .footersome a {
+    color: #fff; /* Social icon color */
+    margin-right: 10px; /* Spacing between social icons */
+  }
+
+  #footer .footersome a:hover {
+    text-decoration: underline; /* Add underline on hover for social links */
+  }
+
+  .copyright {
+    font-size: 12px; /* Adjust copyright text size */
+  }
 }

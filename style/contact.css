@@ -1,6 +1,7 @@
 /* Importing other CSS files */
 @import './header.css';
 @import './footer.css';
+@import "./row.css";
 
 * {
   box-sizing: border-box;
@@ -70,4 +71,50 @@ button {
 button:hover {
   background-color: #f7c08a; /* Màu nền khi hover */
   transform: translateY(2px); /* Thêm hiệu ứng dịch chuyển nhẹ */
+}
+
+@media screen and (max-width: 768px) {
+  /* Stack sections vertically on smaller screens */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    /* flex: 1 0 100%; Ensure sections take full width on smaller screens */
+  }
+}
+
+/* Form Styles (Optional) */
+form {
+  display: flex; /* Arrange form elements horizontally */
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+}
+
+label {
+  margin-bottom: 5px; /* Add spacing below labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px; /* Add padding for better user input experience */
+  border: 1px solid #ccc; /* Add a basic border */
+  margin-bottom: 10px; /* Add spacing between form elements */
+}
+
+button[type="submit"] {
+  background-color: #007bff; /* Blue button color */
+  color: #fff; /* White text color */
+  border: none; /* Remove default button border */
+  padding: 10px 20px; /* Add padding for button size */
+  cursor: pointer; /* Set cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }

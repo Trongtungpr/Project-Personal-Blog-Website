@@ -17,11 +17,22 @@
     </div>
 
     <!-- Navigation Bar -->
-    <div class="navbar">
-      <a href="../index.html">HOME</a>
-      <a href="../pages/album.html">ALBUM</a>
-      <a href="#">CONTACT</a>
-    </div>
+    <nav id="nav__bar">
+      <ul id="nav__list">
+        <li id="nav__item01">
+          <a href="../index.html" id="nav__item01__link">HOME</a>
+        </li>
+        <li id="nav__item02">
+          <a href="../pages/album.html" id="nav__item02__link">ALBUM</a>
+        </li>
+        <li id="nav__item03">
+          <a href="#" id="nav__item03__link">CONTACT</a>
+        </li>
+        <li id="nav__item04">
+          <a href="../pages/content.html" id="nav__item04__link">BLOG</a>
+        </li>
+      </ul>
+    </nav>
 
     <!-- The flexible grid (content) -->
     <main>
@@ -45,7 +56,9 @@
           <input type="email" id="email" name="email" required />
 
           <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea id="message" name="message" required style="
+          height: 208px;
+      "></textarea>
 
           <button type="submit">Gửi</button>
         </form>
@@ -53,7 +66,7 @@
     </main>
 
     <!-- Footer -->
-    <footer id="main-footer">
+    <footer id="footer">
       <div class="footersome">
         <a href="https://www.youtube.com/" title="Blog YouTube"
           ><i class="fa fa-youtube"></i

@@ -17,26 +17,45 @@
   </div>
 
   <!-- Navigation Bar -->
-  <div class="navbar">
-    <a href="#">HOME</a>
-    <a href="/pages/album.html">ALBUM</a>
-    <a href="/pages/contact.html">CONTACT</a>
-  </div>
-
+  <nav id="nav__bar">
+    <ul id="nav__list">
+      <li id="nav__item01">
+        <a href="#" id="nav__item01__link">HOME</a>
+      </li>
+      <li id="nav__item02">
+        <a href="./pages/album.html" id="nav__item02__link">ALBUM</a>
+      </li>
+      <li id="nav__item03">
+        <a href="./pages/contact.html" id="nav__item03__link">CONTACT</a>
+      </li>
+      <li id="nav__item04">
+        <a href="./pages/content.html" id="nav__item04__link">BLOG</a>
+      </li>
+    </ul>
+  </nav>
   <!-- The flexible grid (content) -->
   <div class="row">
     <main>
       <section class="card-left">
-        <img src="https://i.pinimg.com/564x/a2/1f/45/a21f451cb53c9065cf9587fcd5109737.jpg" alt="Avatar" class="card-img-left" />
-        <div class="container">
-          <h4><b>Jane Doe</b></h4>
-          <p>Interior Designer</p>
-          <button class="card-btn-left"><a href="./pages/content.html">About</a></button>
+        <div class="card-left-item">
+          <figure>
+            <img src="https://i.pinimg.com/564x/a2/1f/45/a21f451cb53c9065cf9587fcd5109737.jpg" alt="Avatar"
+            class="card-img-left" />
+            <figcaption>Avatar</figcaption>
+          </figure>
+          
+
+          <div class="container">
+            <h4><b>Jane Doe</b></h4>
+            <p>Interior Designer</p>
+            <button class="card-btn-left"><a href="./pages/content.html">About</a></button>
+          </div>
         </div>
       </section>
       <div class="main">
         <section class="card-right">
-          <img src="https://i.pinimg.com/564x/c5/6f/58/c56f5806f9abedb2f2793477c0cfa529.jpg" alt="Avatar" class="card-img-right" />
+          <img src="https://i.pinimg.com/564x/c5/6f/58/c56f5806f9abedb2f2793477c0cfa529.jpg" alt="Avatar"
+            class="card-img-right" />
           <div class="container">
             <h4><b>Front end</b></h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -44,7 +63,8 @@
           </div>
         </section>
         <section class="card-right">
-          <img src="https://i.pinimg.com/236x/65/6a/6e/656a6edabb862a6448e365cf2de4bce0.jpg" alt="Avatar" class="card-img-right" />
+          <img src="https://i.pinimg.com/236x/65/6a/6e/656a6edabb862a6448e365cf2de4bce0.jpg" alt="Avatar"
+            class="card-img-right" />
           <div class="container">
             <h4><b>Back end</b></h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
@@ -58,7 +78,7 @@
   </div>
 
   <!-- Footer -->
-  <footer id="main-footer">
+  <footer id="footer">
     <div class="footersome">
       <a href="https://www.youtube.com/" title="Blog YouTube"><i class="fa fa-youtube"></i></a>
       <a href="https://www.facebook.com/" title="Blog Facebook"><i class="fa fa-facebook"></i></a>

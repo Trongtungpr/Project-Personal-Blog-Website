@@ -16,22 +16,97 @@ body {
   color: white;
 }
 
-/* Style the top navigation bar */
-.navbar {
-  display: flex;
-  background-color: #333;
+/* Định dạng thanh điều hướng */
+#nav__bar {
+  background-color: #333; /* Màu nền */
+  padding: 10px 20px; /* Đệm xung quanh */
 }
 
-/* Style the navigation bar links */
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
+/* Kiểu dáng cho danh sách menu */
+#nav__list {
+  list-style: none; /* Xóa dấu đầu mục mặc định */
+  margin: 0; /* Xóa khoảng trống mặc định */
+  padding: 0; /* Xóa khoảng trống mặc định */
 }
 
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
+/* Kiểu dáng cho các mục menu (item) */
+#nav__item01,
+#nav__item02,
+#nav__item03, 
+#nav__item04 {
+  display: inline-block; /* Hiển thị các mục menu theo hàng */
+  margin-right: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+/* Kiểu dáng cho liên kết (link) bên trong mục menu */
+#nav__item01__link,
+#nav__item02__link,
+#nav__item03__link,
+#nav__item04__link {
+  text-decoration: none; /* Xóa gạch chân mặc định */
+  color: #fff; /* Màu sắc của chữ */
+  padding: 5px 10px; /* Đệm xung quanh cho liên kết */
+}
+
+/* Hiệu ứng hover cho liên kết */
+#nav__item01__link:hover,
+#nav__item02__link:hover,
+#nav__item03__link:hover,
+#nav__item04__link:hover {
+  background-color: #e0e0e0; /* Màu nền khi hover */
+  color: #000; /* Màu chữ khi hover */
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Header Styles */
+  .header {
+    text-align: center; /* Center the header content */
+    padding: 20px; /* Add padding for spacing */
+  }
+
+  .header h1 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  /* Navigation Bar Styles */
+  #nav__bar {
+    background-color: #333; /* Background color */
+    padding: 10px 20px; /* Padding around the navigation */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Align items horizontally */
+  }
+
+  #nav__list {
+    list-style: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout of menu items */
+  }
+
+  #nav__item01,
+  #nav__item02,
+  #nav__item03,
+  #nav__item04 {
+    display: inline-block;
+    margin-right: 20px; /* Spacing between menu items */
+  }
+
+  #nav__item01__link,
+  #nav__item02__link,
+  #nav__item03__link,
+  #nav__item04__link {
+    text-decoration: none; /* Remove default underline */
+    color: #fff; /* Text color */
+    padding: 5px 10px; /* Padding for menu items */
+    font-weight: bold; /* Bold font weight for emphasis */
+  }
+
+  #nav__item01__link:hover,
+  #nav__item02__link:hover,
+  #nav__item03__link:hover,
+  #nav__item04__link:hover {
+    background-color: #e0e0e0; /* Hover background color */
+    color: #000; /* Hover text color */
+  }
 }

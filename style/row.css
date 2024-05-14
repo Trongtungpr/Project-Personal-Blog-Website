@@ -1,0 +1,85 @@
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Main column */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    justify-content: center;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    padding: 20px 20px;
+  }
+  .card-left {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+  }
+  .card-left-item {
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  .card-btn-left a{
+    text-decoration: none;
+  }
+  .card-left:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-left  {
+      padding-top: 20px;
+      width: 70%;
+    border-radius: 50%;
+  }
+  .card-btn-left{
+      width: 100%;
+      height: 30px;
+      background-color: aqua;
+      text-decoration: none;
+      border: none;
+      padding: 0;
+      border-radius: 5px;
+  }
+  .card-btn-left:hover {
+      cursor: pointer;
+      background-color: aquamarine;
+  }
+  
+  .container {
+    padding: 2px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Image Grid */
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    /* padding: 20px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  }

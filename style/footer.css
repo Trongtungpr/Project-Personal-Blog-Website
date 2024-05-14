@@ -1,15 +1,41 @@
-#main-footer {
+#footer {
     text-align: center;
     background: #444;
     color: #fff;
     padding: 20px;
   }
-  #main-footer .footersome {
+  #footer .footersome {
     padding: 20px 40px 10px 40px;
     color: #ddd;
     font-size: 20px;
   }
-  #main-footer .footersome a {
+  #footer .footersome a {
     margin-right: 10px;
     color: #ddd;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #footer {
+      background: #333; /* Background color */
+      color: #fff; /* Text color */
+      padding: 20px; /* Padding for spacing */
+      text-align: center; /* Center footer content */
+    }
+  
+    #footer .footersome {
+      margin-bottom: 10px; /* Add spacing below social icons */
+    }
+  
+    #footer .footersome a {
+      color: #fff; /* Social icon color */
+      margin-right: 10px; /* Spacing between social icons */
+    }
+  
+    #footer .footersome a:hover {
+      text-decoration: underline; /* Add underline on hover for social links */
+    }
+  
+    .copyright {
+      font-size: 12px; /* Adjust copyright text size */
+    }
   }
